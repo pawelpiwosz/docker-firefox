@@ -49,6 +49,11 @@ docker run -it --rm --name firefox \
   firefox --private-window
 ```
 
+### Memory reservation
+
+This contaier can be run with restricted memory size. In order to do it, add
+`-m=1G` to docker run command. In this case, memory will be limited to 1G.
+
 ### Credits
 
-I wrote this container based on Marco work.
+I wrote this container based on [Marco](https://github.com/mmatoscom/) work.
