@@ -37,7 +37,7 @@ jobs:
       - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
       - docker tag firefox ${DOCKER_USERNAME}/firefox
       - docker push ${DOCKER_USERNAME}/firefox
-      #- curl -X POST https://hooks.microbadger.com/images/almerhor/weather/VkPBm3EFjXO4YzzbqUolnp67bRQ=
+      - curl -X POST https://hooks.microbadger.com/images/almerhor/firefox/Cq-wHNTMB5KIIiOhTWO-AGVGHqY=
       - docker logout
 
   - stage: Check container
