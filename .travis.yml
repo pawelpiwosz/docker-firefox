@@ -24,7 +24,7 @@ jobs:
 
   - stage: Build test
     script:
-      - ./test.sh ${TRAVIS_BRANCH} ${TRAVIS_COMMIT}
+      - docker build --build-arg BUILD_DATE=${BUILD_DATE} --build-arg VCS_REF=${VCS_REF} --build-arg VER=${VER} -t firefox .
 
   - stage: Push container
     script:
@@ -43,4 +43,3 @@ jobs:
   - stage: Check container
     script:
       - docker pull ${DOCKER_USERNAME}/firefox
-      
