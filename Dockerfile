@@ -10,9 +10,9 @@ ARG VER
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-ref=$VCS_REF
-LABEL org.label-schema.vcs-url="https://github.com/pawelpiwosz/docker-powershell"
-LABEL org.label-schema.name="docker-powershell"
-LABEL org.label-schema.description="Dockerized Powershell"
+LABEL org.label-schema.vcs-url="https://github.com/pawelpiwosz/docker-firefox"
+LABEL org.label-schema.name="docker-firefox"
+LABEL org.label-schema.description="Dockerized Firefox"
 LABEL org.label-schema.version=$VER
 
 RUN apt update && apt install -y \
